@@ -15,10 +15,10 @@ export default function CompanyOverview() {
                     viewport={{ once: true }}
                     className="flex-1"
                 >
-                    <h2 className="text-2xl md:text-[32px] font-semibold mb-4">
+                    <h2 className="font-poppins text-2xl md:text-[32px] font-semibold mb-4">
                         DeshIT-Bd
                     </h2>
-                    <p className="text-[16px] font-normal leading-relaxed">
+                    <p className="font-poppins text-[16px] font-normal leading-relaxed">
                         Started its journey with the determination of enabling organizations to leverage technology for betterment. Our priority is to deliver impact solutions with superior user experience. We are highly design focused and practice SCRUM to meet clients’ requirements and deliver solutions in time and within budget.
                     </p>
                 </motion.div>
@@ -34,8 +34,8 @@ export default function CompanyOverview() {
                         className="w-full md:w-[220px] p-6 bg-white shadow-md rounded-md border border-gray-100 flex flex-col justify-center items-center space-y-1"
                     >
                         <img src={frame} alt="" className="w-16 h-16" />
-                        <h3 className="text-2xl md:text-3xl font-medium">7+</h3>
-                        <p className="text-sm md:text-base text-[#A0A0A0] font-normal text-center">
+                        <h3 className="font-poppins text-2xl md:text-3xl font-medium">7+</h3>
+                        <p className="font-poppins text-sm md:text-base text-[#A0A0A0] font-normal text-center">
                             Years Experience in <br /> App Development
                         </p>
                     </motion.div>
@@ -49,8 +49,8 @@ export default function CompanyOverview() {
                         className="w-full md:w-[220px] p-6 bg-white shadow-md rounded-md border border-gray-100 flex flex-col justify-center items-center space-y-1"
                     >
                         <img src={frame1} alt="" className="w-16 h-16" />
-                        <h3 className="text-2xl md:text-3xl font-medium">30+</h3>
-                        <p className="text-sm md:text-base text-[#A0A0A0] font-normal text-center">
+                        <h3 className="font-poppins text-2xl md:text-3xl font-medium">30+</h3>
+                        <p className="font-poppins text-sm md:text-base text-[#A0A0A0] font-normal text-center">
                             Mobile Apps <br /> Developed
                         </p>
                     </motion.div>
@@ -64,8 +64,8 @@ export default function CompanyOverview() {
                         className="col-span-2 md:col-span-1 w-full md:w-[220px] p-6 bg-white shadow-md rounded-md border border-gray-100 flex flex-col justify-center items-center space-y-1"
                     >
                         <img src={frame2} alt="" className="w-16 h-16" />
-                        <h3 className="text-2xl md:text-3xl font-medium">25+</h3>
-                        <p className="text-sm md:text-base text-[#A0A0A0] font-normal text-center">
+                        <h3 className="font-poppins text-2xl md:text-3xl font-medium">25+</h3>
+                        <p className="font-poppins text-sm md:text-base text-[#A0A0A0] font-normal text-center">
                             Websites <br /> Developed
                         </p>
                     </motion.div>

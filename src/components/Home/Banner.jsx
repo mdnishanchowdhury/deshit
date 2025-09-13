@@ -54,21 +54,21 @@ function Banner() {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex justify-center md:justify-start w-full md:w-1/2 mb-6"
         >
-          <div className="text-center md:text-left pt-8 md:pt-[87px] space-y-4 md:space-y-[29px]">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold">
+          <div className="text-black md:text-white text-center md:text-left pt-8 md:pt-[87px] space-y-4 md:space-y-[29px]">
+            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl  font-bold">
               Outstanding Business
             </h2>
-            <h1 className="text-2xl sm:text-3xl md:text-6xl font-normal text-white">
+            <h1 className="font-poppins text-2xl sm:text-3xl md:text-4xl font-normal ">
               Needs Better Apps
             </h1>
-            <p className="text-[15px] sm:text-base md:text-[18px] font-normal text-white">
+            <p className="font-poppins text-[15px] sm:text-base md:text-[18px] font-normal ">
               We build impactful Apps
             </p>
 
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="border-[#FFF] border-1 hover:bg-blue-100 transition-colors px-8 py-2 rounded-full text-white text-[15px] font-normal hover:text-black"
+              className="font-poppins border-black md:border-[#FFF] border-1 hover:bg-blue-100 transition-colors px-8 py-2 rounded-full text-[15px] font-normal hover:text-black"
             >
               Contact Us
             </motion.button>

@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const getLinkClass = ({ isActive }) =>
-    "relative text-white pb-2 font-medium " +
+    "relative font-poppins text-white pb-2 font-medium " +
     (isActive
       ? "after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-white after:w-full after:transition-all after:duration-500"
       : "after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-white after:w-0 hover:after:w-full after:transition-all after:duration-500");
