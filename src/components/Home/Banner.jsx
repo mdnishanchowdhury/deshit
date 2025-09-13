@@ -1,6 +1,7 @@
-import banner1 from '../../assets/Banner/banner.jpg';
+import banner1 from '../../assets/Banner/banner.png';
 import mobile2 from '../../assets/Banner/mobile.png';
 import Ellipse_1 from '../../assets/Banner/Ellipse_1.png';
+import Ellipse_2 from '../../assets/Banner/Ellipse 2.png';
 
 function Banner() {
   return (
@@ -8,8 +9,6 @@ function Banner() {
       className="relative h-auto md:h-[935px] flex items-center bg-cover bg-center px-3 md:px-6"
       style={{ backgroundImage: `url(${banner1})` }}
     >
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
       {/* image */}
       <div className="absolute -top-10 -left-[60px] sm:-top-14 sm:-left-[80px] md:-top-16 md:-left-[120px]">
         <img src={Ellipse_1} alt="" className="w-[300px] sm:w-[500px] md:w-[733px] h-auto" />
@@ -47,6 +46,14 @@ function Banner() {
             loading="lazy"
           />
         </div>
+      </div>
+      {/* image */}
+      <div className="absolute top-[406px] left-[60px]  -z-10">
+        <img
+          src={Ellipse_2}
+          alt="ellipse"
+          className="w-[250px] sm:w-[500px] md:w-[733px] h-auto opacity-70"
+        />
       </div>
     </section>
   );
