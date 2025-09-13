@@ -5,7 +5,10 @@ function Main() {
     return (
         <div>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <aside className=''>
+                <Outlet></Outlet>
+            </aside>
+
         </div>
     )
 }
