@@ -1,26 +1,60 @@
-import banner1 from '../../assets/Banner/banner.png';
-import mobile2 from '../../assets/Banner/mobile.png';
-import Ellipse_1 from '../../assets/Banner/Ellipse_1.png';
-import Ellipse_2 from '../../assets/Banner/Ellipse 2.png';
+import { motion, useScroll, useTransform } from "framer-motion";
+import banner1 from "../../assets/Banner/banner.png";
+import mobile2 from "../../assets/Banner/mobile.png";
+import Ellipse_1 from "../../assets/Banner/Ellipse_1.png";
+import Ellipse_2 from "../../assets/Banner/Ellipse 2.png";
 
 function Banner() {
+  const { scrollY } = useScroll();
+
+  const ellipse1Opacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const ellipse1Y = useTransform(scrollY, [0, 400], [0, 150]);
+
+  const ellipse2Opacity = useTransform(scrollY, [100, 500], [0, 1]);
+  const ellipse2Y = useTransform(scrollY, [100, 500], [-150, 0]);
+
   return (
     <section
       className="relative h-auto md:h-[935px] flex items-center bg-cover bg-center px-3 md:px-6"
       style={{ backgroundImage: `url(${banner1})` }}
     >
-      {/* image */}
-      <div className="absolute -top-10 -left-[60px] sm:-top-14 sm:-left-[80px] md:-top-16 md:-left-[120px]">
-        <img src={Ellipse_1} alt="" className="w-[300px] sm:w-[500px] md:w-[733px] h-auto" />
-      </div>
+      {/*Ellipse_1 */}
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        style={{ opacity: ellipse1Opacity, y: ellipse1Y }}
+        className="absolute -top-10 -left-[60px] sm:-top-14 sm:-left-[80px] md:-top-16 md:-left-[120px]"
+      >
+        <img
+          src={Ellipse_1}
+          alt="Ellipse 1"
+          className="w-[300px] sm:w-[500px] md:w-[733px] h-auto"
+        />
+      </motion.div>
 
+      {/* Ellipse 2 */}
+      <motion.div
+        style={{ opacity: ellipse2Opacity, y: ellipse2Y }}
+        className="absolute top-[406px] left-[60px] -z-10"
+      >
+        <img
+          src={Ellipse_2}
+          alt="Ellipse 2"
+          className="w-[320px] sm:w-[500px] md:w-[733px] h-auto opacity-70"
+        />
+      </motion.div>
 
-      {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between w-full max-w-[1322px] mx-auto  lg:px-0 ">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between w-full max-w-[1322px] mx-auto lg:px-0">
 
-        {/* Left Text Section */}
-        <div className="flex justify-center md:justify-start w-full md:w-1/2 mb-6">
-          <div className="text-center md:text-left  pt-8 md:pt-[87px] space-y-4 md:space-y-[29px]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="flex justify-center md:justify-start w-full md:w-1/2 mb-6"
+        >
+          <div className="text-center md:text-left pt-8 md:pt-[87px] space-y-4 md:space-y-[29px]">
             <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold">
               Outstanding Business
             </h2>
@@ -31,29 +65,29 @@ function Banner() {
               We build impactful Apps
             </p>
 
-            <button className="border-[#FFF] border-1 hover:bg-blue-100 transition-colors px-8 py-2 rounded-full text-white text-[15px] font-normal hover:text-black">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="border-[#FFF] border-1 hover:bg-blue-100 transition-colors px-8 py-2 rounded-full text-white text-[15px] font-normal hover:text-black"
+            >
               Contact Us
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right Image Section */}
-        <div className="mt-20 md:mt-0 md:mr-11 flex justify-center md:justify-end w-full md:w-1/2">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          className="mt-20 md:mt-0 md:mr-11 flex justify-center md:justify-end w-full md:w-1/2"
+        >
           <img
             src={mobile2}
             alt="Preview of our mobile app"
             className="w-56 sm:w-72 md:w-96 h-auto"
             loading="lazy"
           />
-        </div>
-      </div>
-      {/* image */}
-      <div className="absolute top-[406px] left-[60px]  -z-10">
-        <img
-          src={Ellipse_2}
-          alt="ellipse"
-          className="w-[250px] sm:w-[500px] md:w-[733px] h-auto opacity-70"
-        />
+        </motion.div>
       </div>
     </section>
   );

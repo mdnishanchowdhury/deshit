@@ -6,7 +6,6 @@ import { IoMenu, IoClose } from 'react-icons/io5';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Navbar active link styles
   const getLinkClass = ({ isActive }) =>
     "relative text-white pb-2 font-medium " +
     (isActive
@@ -28,15 +27,13 @@ function Navbar() {
   return (
     <div className="fixed top-0 w-full z-20 bg-transparent px-3 md:px-6 pt-6 md:pt-10">
       <div className="max-w-[1322px] mx-auto flex justify-between items-center">
-        {/* Logo */}
+
         <img src={logo} alt="Logo" className="w-[153px] h-[27px] object-cover" />
 
-        {/* Desktop Menu (lg and up) */}
         <ul className="hidden lg:flex flex-row gap-10 xl:gap-14 text-[15px] font-medium text-white">
           {links}
         </ul>
 
-        {/* Mobile & Tablet Hamburger Button */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
