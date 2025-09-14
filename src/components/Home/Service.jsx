@@ -11,9 +11,10 @@ import SectionCover from '../SectionCover/SectionCover'
 function Service() {
     const { scrollY } = useScroll();
 
+
     const ellipseOpacity = useTransform(scrollY, [0, 600], [0, 1]);
-    const ellipseYRaw = useTransform(scrollY, [0, 600], [-150, 0]);
-    const ellipseY = useSpring(ellipseYRaw, { stiffness: 50, damping: 20 });
+    const ellipseYRaw = useTransform(scrollY, [0, 600], [-500, 0]);
+    const ellipseY = useSpring(ellipseYRaw, { stiffness: 60, damping: 20 });
 
     const ourService = [
         { image: group1, service: "Mobile App Development" },
@@ -29,18 +30,20 @@ function Service() {
 
             {/* Ellipse 2 */}
             <motion.div
-                style={{ opacity: ellipseOpacity, y: ellipseY }}
+                initial={{ opacity: 0, y: -200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: false }}
                 className="absolute top-[400px] -left-[100px] -z-10"
             >
                 <img
                     src={Ellipse_2}
-                    alt="Ellipse 2"
+                    alt="image"
                     className="w-[320px] sm:w-[500px] md:w-[400px] h-[324px] opacity-70"
                 />
             </motion.div>
 
             <div className="max-w-[1322px] mx-auto px-6 lg:px-0">
-                {/* Section Title */}
                 <div className='pb-6'>
                     <SectionCover
                         heading1={'Our'}
