@@ -25,7 +25,7 @@ function DevelopedProjects() {
     ];
 
     return (
-        <div className="relative w-full pb-10 md:pb-20">
+        <div className="relative w-full pb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-center pb-5 md:pb-7">
                 Our <span className="text-[#FA8370]">Developed</span> Projects
             </h2>
