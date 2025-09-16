@@ -1,9 +1,11 @@
 import Banner from '../../components/Home/Banner'
 import CompanyOverview from '../../components/Home/CompanyOverview'
+import ContactSection from '../../components/Home/ContactSection'
 import DevelopedProjects from '../../components/Home/DevelopedProjects'
 import DigitalMarketing from '../../components/Home/DigitalMarketing'
 import Products from '../../components/Home/Products'
 import Service from '../../components/Home/Service'
+import TechnologySection from '../../components/Home/TechnologySection'
 
 function Home() {
   return (
@@ -14,6 +16,10 @@ function Home() {
         <Products></Products>
         <DevelopedProjects></DevelopedProjects>
           <DigitalMarketing></DigitalMarketing>
+          <TechnologySection></TechnologySection>
+          <ContactSection></ContactSection>
+
+           
     </div>
   )
 }

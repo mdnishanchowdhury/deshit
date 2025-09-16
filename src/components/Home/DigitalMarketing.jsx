@@ -22,7 +22,7 @@ export default function DigitalMarketing() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center px-4 py-10">
+        <div className="flex flex-col justify-center items-center px-4 py-10 mb-[192px]">
               <div className='mb-[150px]'>
                     <SectionCover
                         heading1={'Digital'}
