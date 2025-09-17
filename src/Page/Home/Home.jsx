@@ -10,18 +10,15 @@ import TechnologySection from '../../components/Home/TechnologySection'
 function Home() {
   return (
     <div>
-        <Banner></Banner>
-        <CompanyOverview></CompanyOverview>
-        <Service></Service>
-        <Products></Products>
-        <DevelopedProjects></DevelopedProjects>
-          <DigitalMarketing></DigitalMarketing>
-          <TechnologySection></TechnologySection>
-          <ContactSection></ContactSection>
-
-           
+      <Banner></Banner>
+      <CompanyOverview></CompanyOverview>
+      <Service></Service>
+      <Products></Products>
+      <DevelopedProjects></DevelopedProjects>
+      <DigitalMarketing></DigitalMarketing>
+      <TechnologySection></TechnologySection>
+      <ContactSection></ContactSection>
     </div>
   )
 }
-
 export default Home
