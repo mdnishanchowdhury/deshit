@@ -62,5 +62,8 @@ npm run dev
 5. Set output directory: `dist`
 6. Deploy & copy live URL here.
 
---
+
 ## Screenshots / Demo
+
+![Uploading FireShot Capture 001 - DESHIT - [localhost].png…]()
+
