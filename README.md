@@ -43,7 +43,7 @@ This is the landing page for **DeshIt BD**, developed based on the provided Figm
 
 bash
 # Clone repository
-git clone https://github.com/<your-username>/deshit-landing.git
+git clone https://github.com/mdnishanchowdhury/deshit.git
 cd deshit-landing
 
 # Install dependencies
