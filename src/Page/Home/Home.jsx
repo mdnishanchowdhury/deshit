@@ -1,4 +1,5 @@
 import Banner from '../../components/Home/Banner'
+import ClientsSection from '../../components/Home/ClientsSection'
 import CompanyOverview from '../../components/Home/CompanyOverview'
 import ContactSection from '../../components/Home/ContactSection'
 import DevelopedProjects from '../../components/Home/DevelopedProjects'
@@ -16,6 +17,7 @@ function Home() {
       <Products></Products>
       <DevelopedProjects></DevelopedProjects>
       <DigitalMarketing></DigitalMarketing>
+      <ClientsSection></ClientsSection>
       <TechnologySection></TechnologySection>
       <ContactSection></ContactSection>
     </div>

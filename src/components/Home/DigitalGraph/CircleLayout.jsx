@@ -36,39 +36,41 @@ const CircleLayout = ({ items }) => {
 
   return (
     <div className="absolute left-1/2 top-1/2">
-      {items.map((item, index) => {
-        const pos = getPosition(index);
-        return (
-          <div
-            key={index}
-            className={`absolute flex items-center justify-center text-center ${item.extraClass || ""}`}
-            style={{
-              transform: `translate(-50%, -50%) translate(${pos.x}px, ${pos.y}px)`,
-            }}
-          >
+      {
+        items.map((item, index) => {
+          const pos = getPosition(index);
+          return (
             <div
-              className={`flex gap-2 items-center
+              key={index}
+              className={`absolute flex items-center justify-center text-center ${item.extraClass || ""}`}
+              style={{
+                transform: `translate(-50%, -50%) translate(${pos.x}px, ${pos.y}px)`,
+              }}
+            >
+              <div
+                className={`flex gap-2 items-center
                 ${item.layout === "row" ? "flex-row" : ""}
                 ${item.layout === "row-reverse" ? "flex-row-reverse" : ""}
                 ${item.layout === "col" ? "flex-col" : ""}
                 ${item.layout === "col-reverse" ? "flex-col-reverse" : ""}`}
-            >
-              <img
-                src={item.icon}
-                alt={item.title}
-                className="bg-white rounded-full"
-                style={{ width: iconSize, height: iconSize }}
-              />
-              <h2
-                className="text-xs font-bold font-poppins"
-                style={{ fontSize: iconSize / 4 }}
               >
-                {item.title}
-              </h2>
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="bg-white rounded-full"
+                  style={{ width: iconSize, height: iconSize }}
+                />
+                <h2
+                  className="text-xs font-bold font-poppins"
+                  style={{ fontSize: iconSize / 4 }}
+                >
+                  {item.title}
+                </h2>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })
+      }
     </div>
   );
 };
