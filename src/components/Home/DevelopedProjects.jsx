@@ -14,7 +14,6 @@ function DevelopedProjects() {
     const ellipseYRaw = useTransform(scrollY, [0, 600], [-500, 0]);
     const ellipseY = useSpring(ellipseYRaw, { stiffness: 60, damping: 20 });
 
-
     const products = [
         { image: group1, product: "Swoop News" },
         { image: group2, product: "Telefood" },
@@ -30,7 +29,6 @@ function DevelopedProjects() {
                 Our <span className="text-[#FA8370]">Developed</span> Projects
             </h2>
 
-            {/* Ellipse 2 */}
             <motion.div
                 initial={{ opacity: 0, y: -200 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +43,6 @@ function DevelopedProjects() {
                 />
             </motion.div>
 
-            {/* Card */}
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 px-4 sm:px-6 lg:px-0">
                     {

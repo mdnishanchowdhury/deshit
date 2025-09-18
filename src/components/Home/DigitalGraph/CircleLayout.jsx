@@ -8,12 +8,12 @@ const CircleLayout = ({ items }) => {
     const handleResize = () => {
       const width = window.innerWidth;
 
-      if (width < 640) {
+      if (width < 1024) {
         setRadius(80);
         setIconSize(32);
-      } else if (width < 1024) {
-        setRadius(130);
-        setIconSize(40);
+      } else if (width < 1366) {
+        setRadius(80);
+        setIconSize(32);
       } else {
         setRadius(150);
         setIconSize(48);
