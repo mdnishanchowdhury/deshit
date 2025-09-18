@@ -22,10 +22,6 @@ This is the landing page for **DeshIt BD**, developed based on the provided Figm
 
 ---
 
-## Design & Assets
-
-* **Figma Design:** [Figma Link](https://www.figma.com/design/8vW18h2mvcOOIyMNvIfZOy/DeshIt-BD-landing-Page?node-id=5-118)
----
 
 ## Tech Stack
 
