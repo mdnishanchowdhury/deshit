@@ -65,5 +65,6 @@ npm run dev
 
 ## Screenshots / Demo
 
-![Uploading FireShot Capture 001 - DESHIT - [localhost].png…]()
+### Home Page
+<img width="1920" height="8470" alt="homePage" src="https://github.com/user-attachments/assets/049617c6-ad91-4c6c-8b4b-b7f77f64a89e" />
 
