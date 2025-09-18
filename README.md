@@ -18,7 +18,7 @@ This is the landing page for **DeshIt BD**, developed based on the provided Figm
 ## Live Demo
 
 * **Live Site:** [Click Here](https://deshit.vercel.app/)
-* **Demo Video:** [View Demo](REPLACE_WITH_VIDEO_LINK)
+* **Demo Video:** [View Demo](https://drive.google.com/file/d/13PaZ_IwnZgj7W4m4tKyXG7NMx_6eqls0/view?usp=sharing)
 
 ---
 
