@@ -1,12 +1,70 @@
-# React + Vite
+# DeshIt BD — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pixel-perfect, responsive, animated landing page built with **React + TailwindCSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This is the landing page for **DeshIt BD**, developed based on the provided Figma design. The website is:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*  Pixel-perfect according to the Figma file
+*  Fully responsive across mobile, tablet, and desktop
+*  Enhanced with smooth animations using **Framer Motion** & **GSAP**
+*  Deployed on **Vercel**
+
+---
+
+## Live Demo
+
+* **Live Site:** [Click Here](REPLACE_WITH_VERCEL_URL)
+* **Demo Video:** [View Demo](REPLACE_WITH_VIDEO_LINK)
+
+---
+
+## Design & Assets
+
+* **Figma Design:** [Figma Link](https://www.figma.com/design/8vW18h2mvcOOIyMNvIfZOy/DeshIt-BD-landing-Page?node-id=5-118)
+---
+
+## Tech Stack
+
+* **Frontend:** React 19,
+* **Styling:** Tailwind CSS, DaisyUI
+* **Animations:** Framer Motion
+* **Utilities:** Axios
+
+---
+
+
+## Setup & Installation
+
+### Prerequisites
+
+* Node.js v18 or later
+
+### Steps
+
+bash
+# Clone repository
+git clone https://github.com/<your-username>/deshit-landing.git
+cd deshit-landing
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+
+##  Deployment on Vercel
+
+1. Push the code to GitHub/GitLab.
+2. Go to [Vercel](https://vercel.com/) 
+3. Select framework **Vite**.
+4. Set build command: `npm run build`
+5. Set output directory: `dist`
+6. Deploy & copy live URL here.
+
+--
+## Screenshots / Demo
