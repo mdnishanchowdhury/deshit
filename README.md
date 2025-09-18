@@ -37,7 +37,7 @@ This is the landing page for **DeshIt BD**, developed based on the provided Figm
 
 ### Prerequisites
 
-* Node.js v18 or later
+* Node.js
 
 ### Steps
 
